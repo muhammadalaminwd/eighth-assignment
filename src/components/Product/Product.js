@@ -13,9 +13,9 @@ const Product = ({product, handleAddToCartbtn}) => {
         <p>Category: {category}</p>
         <p>Price: ${price}</p>
         <p><small>Seller: {seller}</small></p>
-        <p><small>Ratings: {ratings} stars</small></p>
         <p><small>Stock: {stock}</small></p>
         <p><small>Shipping: {shipping}</small></p>
+        <p><small>Ratings: {ratings} stars</small></p>
         <p><small>Ratings Count: {ratingsCount}</small></p>
         </div>
         <button onClick={()=> handleAddToCartbtn(product)} className='btn-cart'>
