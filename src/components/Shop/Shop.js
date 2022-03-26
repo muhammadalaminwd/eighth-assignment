@@ -35,20 +35,22 @@ const Shop = () => {
                 products.map(product =><Product key={product.id}
                 product={product}
                 handleAddToCartbtn={handleAddToCartbtn}
-                    >
-                    </Product>)
+                >
+                </Product>)
             }
             </div>
             <div className="cart-container">
+            <div className='cart-container-inside'>
             <h3>Order Summary</h3>
             {
                 cart.map(product =><Cart product={product}
-                    key={product}
-                    ></Cart>
+                key={product}
+                ></Cart>
                 )
             }
             <button onClick={ChooseOne} className='choose-btn'>Choose 1 For me</button>
             <button onClick={ChooseAgain} className='choose-again-btn'>Choose again</button>
+            </div>
             </div>
         </div>
     );

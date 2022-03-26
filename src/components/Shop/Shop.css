@@ -33,6 +33,10 @@
     top: 0;
     
 }
+.cart-container-inside{
+    position: sticky;
+    top: 0;
+}
 
 @media screen and (max-width: 650px) {
     .products-container{
