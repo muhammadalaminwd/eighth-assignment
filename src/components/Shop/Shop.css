@@ -10,12 +10,6 @@
     margin: 50px 50px;
 }
 
-.cart-container{
-    background-color: rgba(34, 230, 116, 0.3);
-    position: sticky;
-    top: 0;
-}
-
 .choose-btn{
     background-color: #e68210;
     color: aliceblue;
@@ -33,8 +27,16 @@
     padding: 5px;
 }
 
+.cart-container{
+    background-color: rgba(34, 230, 116, 0.3);
+    position: sticky;
+    top: 0;
+    
+}
+
 @media screen and (max-width: 650px) {
     .products-container{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
