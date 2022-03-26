@@ -13,9 +13,7 @@ const Shop = () => {
         .then(data => setProducts(data))
     }, []);
 
-    const handleAddToCartClick = (product) => {
-        // console.log(product);
-        // don't do this- cart.push(product);
+    const handleAddToCartbtn = (product) => {
         const newCart = [...cart, product];
         setCart(newCart);
         
@@ -26,7 +24,7 @@ const Shop = () => {
             {
                 products.map(product =><Product key={product.id}
                 product={product}
-                handleAddToCartClick={handleAddToCartClick}
+                handleAddToCartbtn={handleAddToCartbtn}
                     >
                     </Product>)
             }

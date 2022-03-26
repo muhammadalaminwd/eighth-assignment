@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Getting Started with the Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Website Link: [Let's Shopping](https://eighth-assignment.netlify.app/).
+
+
+## About Website
+Let's shopping is a e-commerce website for buying shoes. You can buy any Men's shoes from this website. Payment method is electronic banking system. Adidas is the main product of this site.
+
 
 ## Available Scripts
 
