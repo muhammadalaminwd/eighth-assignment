@@ -10,7 +10,7 @@ const QuestionTwo = () => {
             i) Update function doesn't update the value directly.
             ii) React won't trigger a re-render, if we use the same value as the current state.
             iii) useState doesn't marge objects when the state is updated.
-            iv) It follows the same rules that all the hooks do.
+            iv) It follows the same rules that all the hooks do. Please note that useState hook callback for updating the state behaves differently than components this.setState.
             </p>
         </div>
     );
