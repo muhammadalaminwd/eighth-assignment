@@ -4,15 +4,19 @@ import {faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './Product.css'
 const Product = ({product, handleAddToCartClick}) => {
     // const {product, handleAddToCartClick} = props;
-        const {name, img, seller, price, ratings} = product
+        const {name, img, category, seller, price, ratings, stock, shipping, ratingsCount} = product
     return (
         <div className='product'>
-            <img src={img} alt="" />
+        <img src={img} alt="" />
         <div className='product-info'>
         <p className='product-name'>{name}</p>
+        <p>Category: {category}</p>
         <p>Price: ${price}</p>
         <p><small>Seller: {seller}</small></p>
         <p><small>Ratings: {ratings} stars</small></p>
+        <p><small>Stock: {stock}</small></p>
+        <p><small>Shipping: {shipping}</small></p>
+        <p><small>Ratings Count: {ratingsCount}</small></p>
         </div>
         <button onClick={()=> handleAddToCartClick(product)} className='btn-cart'>
         <p className='btn-text'>Add to cart</p>
