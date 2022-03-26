@@ -30,7 +30,15 @@ const Shop = () => {
             }
             </div>
             <div className="cart-container">
-            <Cart cart={cart}></Cart>
+            <h3>Order Summary</h3>
+            {
+                cart.map(product =>             <Cart product={product}
+                    key={product}
+                    ></Cart>
+                )
+            }
+            <button className='choose-btn'>Choose 1 For me</button>
+            <button className='choose-again-btn'>Choose again</button>
             </div>
         </div>
     );
